@@ -7,13 +7,12 @@ namespace Examen_ED_Diego_Galindo
     /// </summary>
     public class Circle : IArea
     {
-        private double radius;
         /// <summary>
         /// Devluelve el valor de el radio
         /// </summary>
         public double Radius
         {
-            get => radius;
+            get => Radius;
             set
             {
                 if (Radius < 0)

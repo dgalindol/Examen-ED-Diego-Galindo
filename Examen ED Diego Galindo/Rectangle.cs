@@ -20,6 +20,7 @@ namespace Examen_ED_Diego_Galindo
                 if (Width < 0) throw new ArgumentException("El valor debe ser superior a 0");
             }
         }
+
         /// <summary>
         /// Comprueba que el valor Height es superior a 0
         /// </summary>
