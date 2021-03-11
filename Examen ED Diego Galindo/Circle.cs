@@ -2,10 +2,15 @@
 
 namespace Examen_ED_Diego_Galindo
 {
+    /// <summary>
+    /// Devuelve el valor de el area del circulo a partir del radio 
+    /// </summary>
     public class Circle : IArea
     {
         private double radius;
-
+        /// <summary>
+        /// Devluelve el valor de el radio
+        /// </summary>
         public double Radius
         {
             get => radius;
@@ -17,17 +22,15 @@ namespace Examen_ED_Diego_Galindo
                 }
             }
         }
+        /// <summary>
+        /// Devuelve el valor del area
+        /// </summary>
         public double Area
         {
             get
             {
                 return (Radius * Radius) * Math.PI;
             }
-        }
-
-        public string ToString(double Area)
-        {
-            return "Circulo de área = " + Area;
         }
         /// <summary>
         /// Devuelve el valor del radio y el area
