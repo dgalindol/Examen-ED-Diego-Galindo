@@ -2,23 +2,32 @@
 
 namespace Examen_ED_Diego_Galindo
 {
-    /// <summary>
-    /// Calcula el Area de un circulo a partir de un Radio dado
-    /// </summary>
-    public class Circle
+    public class Circle : IArea
     {
-        /// <summary>
-        /// Devuelve el valor del Radio
-        /// </summary>
-        public double Radius { get; set; }    
-        /// <summary>
-        /// Devuelve el valor del area del circulo calculada a traves de Radius
-        /// </summary>
-        public double Area { 
-            get 
+        private double radius;
+
+        public double Radius
+        {
+            get => radius;
+            set
+            {
+                if (Radius < 0)
+                {
+                    throw new ArgumentException("El valor debe ser mayor que 0");
+                }
+            }
+        }
+        public double Area
+        {
+            get
             {
                 return (Radius * Radius) * Math.PI;
-            } 
+            }
+        }
+
+        public string ToString(double Area)
+        {
+            return "Circulo de área = " + Area;
         }
         /// <summary>
         /// Devuelve el valor del radio y el area
