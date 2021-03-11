@@ -3,16 +3,16 @@
 namespace Examen_ED_Diego_Galindo
 {
     /// <summary>
-    /// Esta clase va a calcular el Area de un circulo a partir de un Radio dado
+    /// Calcula el Area de un circulo a partir de un Radio dado
     /// </summary>
     public class Circle
     {
         /// <summary>
-        /// Esta priedad va a dar el valor del Radio del circulo
-        /// /// </summary>
+        /// Devuelve el valor del Radio
+        /// </summary>
         public double Radius { get; set; }    
         /// <summary>
-        /// Esta propiedad devuelve el valor del area del circulo calculada a traves de Radius
+        /// Devuelve el valor del area del circulo calculada a traves de Radius
         /// </summary>
         public double Area { 
             get 
@@ -20,5 +20,13 @@ namespace Examen_ED_Diego_Galindo
                 return (Radius * Radius) * Math.PI;
             } 
         }
+
+        public string ToString(double Area)
+        {
+            return "Circulo de radio = " + Radius + ", área = " + Area;
+        }
+
+
+
     }
 }
