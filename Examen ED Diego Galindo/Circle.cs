@@ -20,7 +20,9 @@ namespace Examen_ED_Diego_Galindo
                 return (Radius * Radius) * Math.PI;
             } 
         }
-
+        /// <summary>
+        /// Devuelve el valor del radio y el area
+        /// </summary>
         public string ToString(double Area)
         {
             return "Circulo de radio = " + Radius + ", área = " + Area;
