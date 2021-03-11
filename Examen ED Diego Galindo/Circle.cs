@@ -2,11 +2,13 @@
 
 namespace Examen_ED_Diego_Galindo
 {
-    public class Circle
+    public class Circle : IArea
     {
         private double radius;
 
-        public double Radius { get => radius;
+        public double Radius
+        {
+            get => radius;
             set
             {
                 if (Radius < 0)
